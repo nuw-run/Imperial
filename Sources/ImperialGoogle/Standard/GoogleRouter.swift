@@ -10,7 +10,7 @@ public class GoogleRouter: FederatedServiceRouter {
     public let service: OAuthService = .google
     public let callbackHeaders: HTTPHeaders = {
         var headers = HTTPHeaders()
-        headers.contentType = .urlEncodedForm
+        headers.contentType = .json
         return headers
     }()
 
